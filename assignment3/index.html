@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Papa's Boba Maker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/objects.js" defer></script>
+</head>
+
+<body>
+    <h1>Papa's Boba Maker</h1>
+
+    <form id="bobaOrderForm">
+
+        <div class="bobaOrderForm">
+            <img src="images/lemon-tea.png" alt="honeyLemonTea">
+            <label for="buildBase">Select Boba Flavor:</label>
+            <select id="buildBase" class="build">
+                <option value="Matcha tea">Matcha tea</option>
+                <option value="Earle grey milk tea">Earle grey milk tea</option>
+                <option value="Taro milk tea">Taro milk tea</option>
+            </select>
+
+            <img src="images/mango-diamond.png" alt="mangoSlush">
+            <label for="buildSize">Select Boba Size:</label>
+            <select id="buildSize" class="build">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <img src="images/milk-tea.png" alt="BlkMilkTea">
+            <label for="buildSugar">Select Sugar Level:</label>
+            <select id="buildSugar" class="build">
+                <option value="100">100% sugar</option>
+                <option value="50">50% sugar</option>
+                <option value="25">25% sugar</option>
+                <option value="0">0% sugar</option>
+            </select>
+
+            <img src="images/smoothie.png" alt="strBananaSmooth">
+            <label for="buildIce">Select Ice Level:</label>
+            <select id="buildIce" class="build">
+                <option value="100">100% ice</option>
+                <option value="75">75% ice</option>
+                <option value="0">0% ice</option>
+            </select>
+
+            <img src="images/matcha.png" alt="matchaRedBean">
+            <label for="buildTopp">Select Topping:</label>
+            <select id="buildTopp" class="build">
+                <option value="tapioca pearls">Tapioca pearls</option>
+                <option value="exploding pearls">Exploding pearls</option>
+                <option value="red bean">Red bean</option>
+            </select>
+        </div>
+
+        <button id="submit">Order Boba</button>
+    </form>
+
+    <p id="studentInfo"></p>
+    <p id="bobaOrderDetails"></p>
+</body>
+
+</html>
